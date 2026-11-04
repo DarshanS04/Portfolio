@@ -1,0 +1,39 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    name: Lint, Test, Build & Prerender Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Runtime (v22)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Run ESLint Code Standards
+        run: npm run lint
+
+      - name: Execute Vitest Unit & Regression Tests
+        run: npm run test
+
+      - name: Build Application & Static Prerender All Routes
+        run: npm run build
+        env:
+          VITE_SITE_URL: https://darshan-portfolio.vercel.app
+
+      - name: Verify Prerendered HTML & SEO Metadata
+        run: npm run check-prerender
