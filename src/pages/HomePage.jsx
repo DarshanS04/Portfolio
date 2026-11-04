@@ -1,5 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { HeroSection } from '@/components/sections/HeroSection';
+import { AboutSection } from '@/components/sections/AboutSection';
+import { SkillsSection } from '@/components/sections/SkillsSection';
+import { ProjectsSection } from '@/components/sections/ProjectsSection';
+import { ExperienceSection } from '@/components/sections/ExperienceSection';
+import { EducationSection } from '@/components/sections/EducationSection';
+import { ContactSection } from '@/components/sections/ContactSection';
 import { PROFILE } from '@/content/profile';
 
 export function HomePage() {
@@ -13,13 +20,15 @@ export function HomePage() {
         />
         <link rel="canonical" href={PROFILE.siteUrl} />
       </Helmet>
-      <main id="main-content" className="min-h-screen pt-20 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold font-mono text-text-primary">
-            {PROFILE.name}
-          </h1>
-          <p className="text-text-secondary mt-2">{PROFILE.title}</p>
-        </div>
+
+      <main id="main-content" className="flex-1">
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <EducationSection />
+        <ContactSection />
       </main>
     </>
   );
