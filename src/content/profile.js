@@ -67,3 +67,4 @@ export const PROFILE = {
   resumeUrl: '/resume.pdf',
   siteUrl: 'https://darshan-portfolio.vercel.app',
 };
+

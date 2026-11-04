@@ -65,3 +65,4 @@ Sitemap: ${siteUrl}/sitemap.xml
 }
 
 generateSitemap();
+

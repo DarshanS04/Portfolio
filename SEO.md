@@ -60,3 +60,4 @@ Google uses identity backlinks to connect your name to this website:
 - Check your Core Web Vitals (LCP < 2.5s, CLS < 0.1, INP < 200ms).
 - Query Google every 2-3 days for `"Darshan Saravari"` to verify the snippet rendering with title:
   `Darshan Saravari | Full-Stack & Android Developer`.
+

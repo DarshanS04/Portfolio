@@ -24,3 +24,4 @@ if (rootElement.hasChildNodes()) {
     </React.StrictMode>
   );
 }
+

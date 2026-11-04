@@ -55,3 +55,4 @@ describe('contactValidation module', () => {
     expect(result.errors.bot).toBe(true);
   });
 });
+

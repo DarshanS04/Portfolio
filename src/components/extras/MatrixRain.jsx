@@ -127,3 +127,4 @@ export default function MatrixRain({ onClose }) {
 MatrixRain.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
+

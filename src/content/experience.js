@@ -24,3 +24,4 @@ export const EXPERIENCES = [
     technologies: ['Python', 'Cryptography', 'Authentication', 'Security', 'Algorithms'],
   },
 ];
+

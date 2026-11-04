@@ -64,3 +64,4 @@ export const PACKAGE_JSON_SKILLS = {
     "concepts": ["SDLC", "Secure Coding", "Data Structures & Algorithms"]
   }
 };
+

@@ -35,3 +35,4 @@ describe('useTheme hook', () => {
     expect(result.current.theme).toBe(nextExpected);
   });
 });
+
