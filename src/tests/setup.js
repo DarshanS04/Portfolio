@@ -21,3 +21,13 @@ if (typeof window !== 'undefined' && !window.matchMedia) {
 if (typeof window !== 'undefined' && !window.scrollTo) {
   window.scrollTo = () => {};
 }
+
+// Polyfill IntersectionObserver for jsdom testing
+if (typeof window !== 'undefined' && !window.IntersectionObserver) {
+  window.IntersectionObserver = class {
+    constructor() {}
+    observe() {}
+    unobserve() {}
+    disconnect() {}
+  };
+}

@@ -51,6 +51,10 @@ export function Navbar({ onOpenCommandPalette }) {
       return;
     }
 
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
