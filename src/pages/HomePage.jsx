@@ -6,6 +6,7 @@ import { SkillsSection } from '@/components/sections/SkillsSection';
 import { ProjectsSection } from '@/components/sections/ProjectsSection';
 import { ExperienceSection } from '@/components/sections/ExperienceSection';
 import { EducationSection } from '@/components/sections/EducationSection';
+import { GithubStatsSection } from '@/components/sections/GithubStatsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { PROFILE } from '@/content/profile';
 
@@ -28,6 +29,7 @@ export function HomePage() {
         <ProjectsSection />
         <ExperienceSection />
         <EducationSection />
+        <GithubStatsSection />
         <ContactSection />
       </main>
     </>
