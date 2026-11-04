@@ -1,0 +1,69 @@
+/**
+ * Profile information for Darshan Saravari.
+ * Strict facts only - no fabricated metrics or details.
+ */
+
+export const PROFILE = {
+  name: 'Darshan Saravari',
+  title: 'Full-Stack & Android Developer (final-year B.E. student)',
+  roleTaglines: [
+    'Full-Stack Developer',
+    'Android Developer',
+    'Final-Year B.E. Student (CGPA 9.07)',
+    'Entry-Level Software Developer Aspirant',
+  ],
+  email: 'darshansaravari07@gmail.com',
+  github: 'https://github.com/DarshanS04',
+  githubUsername: 'DarshanS04',
+  // TODO: Replace with your actual LinkedIn profile URL
+  linkedin: 'https://linkedin.com/in/TODO_DARSHAN_SARAVARI',
+  location: 'Karnataka, India',
+  status: 'Open to Entry-Level Software Developer Roles (Graduating 2026)',
+  objective:
+    'Final-year Information Science student with hands-on experience in full-stack development using React, Node.js, and MongoDB. Seeking an entry-level software developer role.',
+  bioParagraphs: [
+    'I am a final-year Information Science and Engineering student at SDM College of Engineering & Technology (SDMCET), graduating in 2026 with a CGPA of 9.07.',
+    'With hands-on experience spanning modern web stacks (React, Node.js, Express, MongoDB) and native Android development (Java, Firebase), I enjoy engineering scalable, secure systems and real-time distributed applications. I have completed a software development internship at Exposys Data Labs focusing on cryptographic file transfer and authentication.',
+    'I am actively seeking an entry-level software developer role where I can contribute solid algorithmic foundations, clean architecture practices, and full-stack engineering skills.',
+  ],
+  stats: [
+    { label: 'CGPA (SDMCET)', value: '9.07', detail: 'Information Science & Engineering' },
+    { label: 'Featured Projects', value: '3', detail: 'Full-stack & Mobile systems' },
+    { label: 'Internship', value: 'Exposys Data Labs', detail: 'Software Development Intern' },
+    { label: 'Status', value: 'Graduating 2026', detail: 'Seeking entry-level SDE role' },
+  ],
+  education: [
+    {
+      institution: 'SDM College of Engineering & Technology (SDMCET)',
+      degree: 'B.E. in Information Science and Engineering',
+      duration: 'Graduating 2026',
+      grade: 'CGPA 9.07',
+      location: 'Dharwad, Karnataka, India',
+      coursework: [
+        'Operating Systems',
+        'Computer Networks',
+        'DBMS',
+        'Software Engineering',
+        'Data Structures & Algorithms',
+        'Object-Oriented Programming',
+      ],
+    },
+    {
+      institution: 'Pre-University Course (PUC)',
+      degree: 'Science (PCMB / PCMC)',
+      duration: '2022',
+      grade: '93.17%',
+      location: 'Karnataka, India',
+    },
+    {
+      institution: 'Secondary School Leaving Certificate (SSLC)',
+      degree: '10th Standard',
+      duration: '2020',
+      grade: '92.48%',
+      location: 'Karnataka, India',
+    },
+  ],
+  // TODO: Place your PDF resume in public/resume.pdf
+  resumeUrl: '/resume.pdf',
+  siteUrl: 'https://darshan-portfolio.vercel.app',
+};

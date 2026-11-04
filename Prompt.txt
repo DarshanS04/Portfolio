@@ -1,0 +1,236 @@
+You are a senior software engineer and designer. Build a production-grade,
+highly polished, fully responsive developer portfolio website called
+"Darshan.sh" for Darshan Saravari. Work in phases, plan first, and commit
+after each phase using Conventional Commits. Do not skip any section below.
+
+=====================================================
+1. ABOUT THE OWNER (use ONLY these facts, do not invent anything)
+=====================================================
+- Name: Darshan Saravari
+- Title: Full-Stack & Android Developer (final-year B.E. student)
+- Email: darshansaravari07@gmail.com
+- GitHub: https://github.com/DarshanS04
+- LinkedIn: Darshan Saravari (use a placeholder URL constant to fill in later)
+- Location: Karnataka, India
+- Objective: Final-year Information Science student with hands-on
+  experience in full-stack development using React, Node.js, and MongoDB.
+  Seeking an entry-level software developer role.
+- Education: B.E. in Information Science and Engineering, SDM College of
+  Engineering & Technology (SDMCET), graduating 2026, CGPA 9.15.
+  PUC 2022: 93.17%. SSLC 2020: 92.48%.
+- Coursework: Operating Systems, Computer Networks, DBMS, Software
+  Engineering, Data Structures & Algorithms, Object-Oriented Programming
+- Skills:
+  Languages: Java, C, C++, JavaScript, Python
+  Web: HTML5, CSS3, Node.js, Express.js, React
+  Mobile: Android (Java)
+  Databases: MySQL, MongoDB
+  Tools: Git, GitHub, Postman, VS Code, Android Studio
+  Concepts: SDLC, Secure Coding, Data Structures & Algorithms
+- Experience: Software Development Intern, Exposys Data Labs (Remote,
+  July 2025): designed and enhanced encryption algorithms for secure
+  file/message transfer; implemented authentication and user verification
+  in Python; implemented logic-based identity verification; optimized
+  algorithm performance for security and speed.
+- Projects:
+  1. Full-Stack Electronic Gadget E-Commerce Platform (flagship):
+     React.js, Node.js, Express, MongoDB. Responsive frontend, RESTful
+     APIs, scalable CRUD for products/categories/inventory, JWT + Bcrypt
+     authentication, Razorpay payment gateway integration.
+  2. Bake Track, Smart Bakery Management App: Android + Web, Java,
+     Firebase, HTML/CSS/JS. Real-time system for Managers, Distributors,
+     Customers; inventory, billing, analytics modules on Firebase Realtime
+     Database; live notifications for stock, expiry, payments; built with
+     Agile (Scrum).
+  3. Minor IT Sphere App: Android, Java, Firebase. Students share academic
+     resources, event updates, quizzes; real-time database and
+     notifications; Git collaboration.
+- Put every piece of content in data files under /src/content
+  (profile.js, projects.js, experience.js, skills.js) so the UI never
+  hardcodes text. Use clearly marked TODO placeholders for anything missing
+  (live demo URLs, screenshots, LinkedIn URL). Never fabricate metrics.
+
+=====================================================
+2. TECH STACK
+=====================================================
+- React (latest) + Vite, JavaScript ONLY (no TypeScript). Use JSDoc type
+  annotations on shared data shapes and utility functions, and PropTypes on
+  reusable components.
+- React Router for routing: "/" and "/projects/:slug" case-study pages
+- vite-react-ssg for build-time static prerendering of EVERY route, so the
+  built HTML is fully crawlable. If it proves incompatible with the setup,
+  fall back to a documented alternative (react-snap or a custom prerender
+  script) and tell me why.
+- react-helmet-async (or the vite-react-ssg head API) for per-route title,
+  description, canonical, and OG tags
+- Tailwind CSS + CSS variables for theming
+- Framer Motion for animation
+- Fonts self-hosted (e.g. @fontsource/jetbrains-mono and @fontsource/inter),
+  no render-blocking third-party font requests
+- Images: use optimized WebP/AVIF, explicit width/height, loading="lazy"
+  below the fold, and fetchpriority="high" only for the LCP element
+- Deploy target: Vercel (static output). Add vercel.json with SPA fallback
+  rewrites, long-lived cache headers for hashed assets, and security
+  headers (CSP, X-Content-Type-Options, Referrer-Policy,
+  Permissions-Policy, X-Frame-Options).
+- No heavy terminal library: build a custom terminal component
+
+=====================================================
+3. DESIGN DIRECTION
+=====================================================
+Dark glassmorphism with neon accents and a developer-terminal identity.
+- Deep near-black background, frosted-glass cards, subtle glow on hover
+- Theme system via CSS variables, three themes switchable live and saved
+  in localStorage: "matrix" (green), "dracula" (purple), "cyberpunk"
+  (pink/cyan). Default: electric violet/blue accent.
+- Avoid a flash of wrong theme on load (inline script in index.html sets
+  the theme attribute before first paint)
+- Consistent spacing scale, type scale, and radius tokens
+- Must look professional first, flashy second
+
+=====================================================
+4. HERO: THE ONGOING TERMINAL (signature feature)
+=====================================================
+- A custom terminal window (title bar with three dots, "darshan@portfolio:~")
+- On load: short boot sequence, then an auto-typed looping script:
+    $ whoami
+    $ cat skills.txt
+    $ ls projects/
+    $ git log --oneline -1   ("open to entry-level software developer roles")
+  After the script ends, a blinking cursor stays active and the terminal
+  remains interactive.
+- Interactive commands: help, about, skills, projects, open <project>,
+  experience, education, resume, contact, theme <matrix|dracula|cyberpunk>,
+  clear, sudo hire darshan (confetti + "Request granted" message).
+  Unknown command prints "command not found: <cmd>. Type 'help'."
+- Tab autocomplete, up/down arrow command history
+- Build the command parser as a pure, unit-testable module separate from
+  the React component (command registry pattern, no giant switch)
+- Skip-animation button; respect prefers-reduced-motion (render final
+  state instantly)
+- Accessibility: role="log" with aria-live="polite" for output, the input
+  must be focusable and labelled, full keyboard operation, visible focus
+- The hero ALSO shows, outside the terminal and always visible:
+  name as the page <h1>, rotating role tagline, two CTAs (View Projects,
+  Download Resume), and social icon links. Terminal content must not be
+  the only place key information lives.
+- Mobile: terminal stacks below intro at full width; add tappable command
+  chips (about, projects, resume, contact) so no typing is needed
+
+=====================================================
+5. SECTIONS
+=====================================================
+Hero, About (bio + stats: CGPA 9.07, 3 projects, internship, "currently
+building"), Skills (styled like package.json, grouped, icon chips, NO
+percentage bars), Projects (file-style cards with editor-tab look, tech
+chips, live/GitHub links, 3/2/1 column grid; each project gets its own
+prerendered case-study page at /projects/:slug covering problem,
+architecture, key features, challenges, learnings), Experience (git-log
+style timeline), Education, Contact (form via Formspree or EmailJS with
+client-side validation, honeypot spam field, success/error states, plus
+email/LinkedIn/GitHub; do NOT display the phone number publicly).
+
+=====================================================
+6. EXTRAS
+=====================================================
+- Command palette (Ctrl/Cmd+K) to jump to sections/projects
+- Scroll progress bar styled as a build bar
+- 3D tilt/glow on cards (desktop, pointer devices only)
+- Terminal-style custom 404 route and an error boundary
+- Konami code triggers matrix rain (lazy-loaded with React.lazy, canvas,
+  pausable)
+- Optional GitHub stats section: fetch from the GitHub public API on the
+  client with caching (sessionStorage), loading skeleton, and a graceful
+  fallback if the request fails or is rate-limited. No secrets in client
+  code.
+- Heavy effects (particles, custom cursor, tilt) disabled on touch
+  devices and when prefers-reduced-motion is set
+
+=====================================================
+7. RESPONSIVENESS
+=====================================================
+- Mobile-first. Test and fix at 320, 375, 768, 1024, 1440, 1920 px
+- Fluid type and spacing with clamp(); no horizontal scroll at any width
+- Hamburger menu on mobile (focus-trapped, Esc closes), sticky glass
+  navbar on desktop with active-section highlighting
+- Minimum 44px tap targets; safe-area insets respected on mobile
+
+=====================================================
+8. SEO (high priority: searching "Darshan Saravari" should surface this site)
+=====================================================
+Because this is a Vite app, SEO must be handled deliberately:
+- Static, hand-written SEO in public-facing index.html that exists before
+  any JS runs: <title> "Darshan Saravari | Full-Stack & Android Developer",
+  meta description (150-160 chars) containing the full name, canonical,
+  robots, theme-color, Open Graph and Twitter card tags, favicon set, web
+  manifest
+- Per-route head tags for /projects/:slug (unique title, description,
+  canonical, OG) via react-helmet-async or the SSG head API
+- Verify after build that dist/index.html and dist/projects/<slug>/index.html
+  contain the real rendered content (h1, headings, paragraphs, links), not
+  just an empty root div. Add a build-time check script that fails if the
+  prerendered HTML lacks the name in <h1> and <title>.
+- JSON-LD structured data injected in the prerendered HTML: a Person schema
+  (name, alternateName variants, jobTitle, url, image, email, sameAs array
+  with GitHub + LinkedIn, alumniOf SDMCET, knowsAbout skills) and a WebSite
+  schema; SoftwareSourceCode/CreativeWork schema on project pages
+- Generate sitemap.xml and robots.txt at build time (script or plugin) from
+  the routes list and the site URL in an env var (VITE_SITE_URL)
+- Static Open Graph image at /public/og-image.png (1200x630, name + role).
+  Provide a small script or HTML template I can screenshot to produce it.
+- Semantic HTML: one h1 per page, logical h2/h3 order, landmarks (header,
+  nav, main, section with aria-labelledby, footer)
+- Include a visible, indexable About paragraph in plain text in addition to
+  the terminal (the terminal script is decorative; the same info must exist
+  as real text on the page)
+- Descriptive alt text on all images, descriptive link text
+- Core Web Vitals: LCP < 2.5s, CLS < 0.1, INP < 200ms; Lighthouse 95+ on
+  Performance, Accessibility, Best Practices, SEO (mobile)
+- Include a short SEO.md listing the manual steps I must do after deploy
+  (custom domain, Google Search Console verification + sitemap submission,
+  Bing Webmaster Tools, backlinks from GitHub/LinkedIn)
+
+=====================================================
+9. ENGINEERING PRACTICES (SDE standards)
+=====================================================
+- Clean structure: /src/components (ui, sections, terminal), /src/pages,
+  /src/content, /src/lib, /src/hooks, /src/styles, /src/tests
+- Small single-responsibility components, custom hooks for logic
+  (useTypewriter, useTheme, useKonami, useMediaQuery), no prop drilling
+  beyond two levels, no dead code
+- ESLint (react, react-hooks, jsx-a11y plugins) + Prettier + lint-staged +
+  Husky pre-commit; absolute imports via a Vite alias (@/)
+- Testing: Vitest + React Testing Library for the command parser, theme
+  hook, and contact form validation; Playwright smoke test for hero,
+  navigation, and mobile viewport
+- GitHub Actions CI: install, lint, test, build, prerender check, and
+  Lighthouse CI on pull requests
+- Accessibility (WCAG 2.1 AA): contrast checked on all three themes, skip
+  link, keyboard navigation, reduced-motion support
+- Security: env vars via VITE_ prefix only for non-secret values, with
+  .env.example; input sanitization; no secrets committed; security headers
+  in vercel.json
+- Performance: route-level code splitting with React.lazy, lazy-load heavy
+  components, preload critical fonts, no unused dependencies, bundle
+  analysis (rollup-plugin-visualizer)
+- Git: feature branches, Conventional Commits, meaningful messages after
+  each phase
+- Documentation: a professional README (overview, screenshot placeholders,
+  features, tech stack, architecture, setup, scripts, Vercel deploy steps,
+  how to edit content, how to add a project)
+
+=====================================================
+10. WORKFLOW
+=====================================================
+Phase 1: scaffold Vite + React + Tailwind, tooling, theme system, layout,
+         routing, content files
+Phase 2: terminal component + parser + tests
+Phase 3: remaining sections + case study pages
+Phase 4: extras (command palette, easter eggs, GitHub stats)
+Phase 5: SEO, prerendering, JSON-LD, sitemap/robots, vercel.json,
+         prerender check script
+Phase 6: accessibility + responsive QA across breakpoints
+Phase 7: performance audit, CI, README, SEO.md
+After each phase: run lint, tests, and build; fix failures; then summarize
+what was done and what remains. At the end, give me a checklist of every
+placeholder I still need to fill in.

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Graph Image Template (1200x630)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1200px;
+      height: 630px;
+      background: #07090e;
+      color: #f8fafc;
+      font-family: 'Inter', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(99, 102, 241, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      color: #818cf8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      width: fit-content;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+    }
+    h1 {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .accent {
+      color: #6366f1;
+    }
+    p {
+      font-size: 28px;
+      color: #cbd5e1;
+      max-width: 800px;
+      line-height: 1.4;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #94a3b8;
+      font-size: 20px;
+    }
+    .chips {
+      display: flex;
+      gap: 14px;
+    }
+    .chip {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 6px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="badge">
+    <div class="dot"></div>
+    <span>darshan@portfolio:~</span>
+  </div>
+  <div>
+    <h1>Darshan <span class="accent">Saravari</span></h1>
+    <p style="margin-top: 16px;">Full-Stack & Android Developer · Final-Year B.E. Student at SDMCET (CGPA 9.07)</p>
+  </div>
+  <div class="footer">
+    <div class="chips">
+      <span class="chip">React</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">Android (Java)</span>
+      <span class="chip">MongoDB</span>
+    </div>
+    <div>https://github.com/DarshanS04</div>
+  </div>
+</body>
+</html>
