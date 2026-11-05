@@ -17,7 +17,7 @@ export const PROJECTS = [
       'A full-stack, responsive electronic gadget e-commerce platform built with React.js, Node.js, Express, and MongoDB. Features secure RESTful APIs, scalable CRUD operations for inventory and categories, JWT + Bcrypt authentication, and Razorpay payment gateway integration.',
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Bcrypt', 'Razorpay', 'Tailwind CSS'],
     // TODO: Replace with live deployed link once hosted
-    liveUrl: 'https://TODO-gadget-ecommerce-demo.vercel.app',
+    liveUrl: 'https://electronic-shop-front-end-darshan.vercel.app',
     githubUrl: 'https://github.com/DarshanS04',
     // TODO: Add project screenshots in /public/images/projects/
     heroImage: '/images/projects/gadget-hero.webp',
