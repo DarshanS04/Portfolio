@@ -45,7 +45,7 @@ export function AboutSection() {
                 <Award className="w-6 h-6" />
                 <span className="font-mono text-xs text-text-muted">SDMCET</span>
               </div>
-              <div className="text-3xl font-extrabold font-mono text-text-primary">9.07</div>
+              <div className="text-3xl font-extrabold font-mono text-text-primary">9.15</div>
               <div className="text-sm font-semibold text-text-secondary mt-1">Academic CGPA</div>
               <p className="text-xs text-text-muted mt-1">Information Science & Engineering</p>
             </div>

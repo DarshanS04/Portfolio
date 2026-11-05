@@ -23,7 +23,7 @@ export const PROFILE = {
   objective:
     'Final-year Information Science student with hands-on experience in full-stack development using React, Node.js, and MongoDB. Seeking an entry-level software developer role.',
   bioParagraphs: [
-    'I am a final-year Information Science and Engineering student at SDM College of Engineering & Technology (SDMCET), graduating in 2026 with a CGPA of 9.07.',
+    'I am a final-year Information Science and Engineering student at SDM College of Engineering & Technology (SDMCET), graduating in 2026 with a CGPA of 9.15.',
     'With hands-on experience spanning modern web stacks (React, Node.js, Express, MongoDB) and native Android development (Java, Firebase), I enjoy engineering scalable, secure systems and real-time distributed applications. I have completed a software development internship at Exposys Data Labs focusing on cryptographic file transfer and authentication.',
     'I am actively seeking an entry-level software developer role where I can contribute solid algorithmic foundations, clean architecture practices, and full-stack engineering skills.',
   ],

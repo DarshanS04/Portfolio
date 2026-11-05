@@ -10,7 +10,7 @@ import { PROFILE } from '@/content/profile';
 
 const INITIAL_BOOT_LOGS = [
   { text: '[OK] Loaded kernel: DarshanOS v2026.1-LTS (x86_64)', delay: 100 },
-  { text: '[OK] Initialized memory subsystem: CGPA 9.07 verified (SDMCET)', delay: 250 },
+  { text: '[OK] Initialized memory subsystem: CGPA 9.15 verified (SDMCET)', delay: 250 },
   { text: '[OK] Full-Stack & Android runtime drivers mounted', delay: 400 },
 ];
 

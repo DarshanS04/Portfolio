@@ -45,7 +45,7 @@ export function Footer() {
             </div>
             <div className="flex justify-between text-text-muted">
               <span>ACADEMIC_CGPA</span>
-              <span className="text-text-primary">9.07 (SDMCET)</span>
+              <span className="text-text-primary">9.15 (SDMCET)</span>
             </div>
             <div className="flex justify-between text-text-muted">
               <span>HOST_STATUS</span>

@@ -120,7 +120,7 @@ Dark glassmorphism with neon accents and a developer-terminal identity.
 =====================================================
 5. SECTIONS
 =====================================================
-Hero, About (bio + stats: CGPA 9.07, 3 projects, internship, "currently
+Hero, About (bio + stats: CGPA 9.15, 3 projects, internship, "currently
 building"), Skills (styled like package.json, grouped, icon chips, NO
 percentage bars), Projects (file-style cards with editor-tab look, tech
 chips, live/GitHub links, 3/2/1 column grid; each project gets its own

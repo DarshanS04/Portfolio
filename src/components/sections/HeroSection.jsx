@@ -68,7 +68,7 @@ export function HeroSection() {
 
             {/* Real Plain-Text Bio for Search Crawlers and Immediate Readability */}
             <p className="text-base sm:text-lg text-text-muted leading-relaxed font-sans max-w-xl mx-auto lg:mx-0">
-              {PROFILE.objective} Final-year Information Science student at SDMCET (CGPA 9.07)
+              {PROFILE.objective} Final-year Information Science student at SDMCET (CGPA 9.15)
               building reliable web services with React & Node.js, and native mobile apps with Android.
             </p>
 

@@ -20,7 +20,7 @@ describe('terminalParser module', () => {
     const res = parseCommand('whoami');
     expect(res.type).toBe('text');
     expect(res.output).toContain(PROFILE.name);
-    expect(res.output).toContain('9.07');
+    expect(res.output).toContain('9.15');
     expect(res.output).toContain(PROFILE.location);
   });
 
@@ -74,7 +74,7 @@ describe('terminalParser module', () => {
     const res = parseCommand('education');
     expect(res.type).toBe('text');
     expect(res.output).toContain('SDMCET');
-    expect(res.output).toContain('9.07');
+    expect(res.output).toContain('9.15');
     expect(res.output).toContain('93.17%');
   });
 
