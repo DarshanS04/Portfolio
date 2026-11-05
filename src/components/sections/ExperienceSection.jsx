@@ -33,7 +33,7 @@ export function ExperienceSection() {
           {EXPERIENCES.map((exp) => (
             <div key={exp.id} className="relative group">
               {/* Commit Node Marker */}
-              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-5 h-5 rounded-full bg-bg-primary border-2 border-accent flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div className="absolute -left-[35px] sm:-left-[43px] top-1.5 w-5 h-5 rounded-full bg-bg-primary border-2 border-accent flex items-center justify-center group-hover:scale-110 transition-transform">
                 <span className="w-2 h-2 rounded-full bg-accent" />
               </div>
 

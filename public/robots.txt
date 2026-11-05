@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://darshan-portfolio.vercel.app/sitemap.xml
-
