@@ -5,20 +5,21 @@
 
 export const PROFILE = {
   name: 'Darshan Saravari',
-  title: 'Full-Stack & Android Developer (final-year B.E. student)',
+  title: 'Full-Stack & Android Developer',
   roleTaglines: [
     'Full-Stack Developer',
     'Android Developer',
-    'Final-Year B.E. Student (CGPA 9.07)',
-    'Entry-Level Software Developer Aspirant',
+    'ISE Graduate (CGPA 9.15)',
+    'Software Developer Aspirant',
+    'MERN Stack Developer'
   ],
   email: 'darshansaravari07@gmail.com',
   github: 'https://github.com/DarshanS04',
   githubUsername: 'DarshanS04',
   // TODO: Replace with your actual LinkedIn profile URL
-  linkedin: 'https://linkedin.com/in/TODO_DARSHAN_SARAVARI',
+  linkedin: 'https://in.linkedin.com/in/darshan-saravari',
   location: 'Karnataka, India',
-  status: 'Open to Entry-Level Software Developer Roles (Graduating 2026)',
+  status: 'Open to Entry-Level Software Developer Roles (Graduate 2026)',
   objective:
     'Final-year Information Science student with hands-on experience in full-stack development using React, Node.js, and MongoDB. Seeking an entry-level software developer role.',
   bioParagraphs: [
@@ -27,7 +28,7 @@ export const PROFILE = {
     'I am actively seeking an entry-level software developer role where I can contribute solid algorithmic foundations, clean architecture practices, and full-stack engineering skills.',
   ],
   stats: [
-    { label: 'CGPA (SDMCET)', value: '9.07', detail: 'Information Science & Engineering' },
+    { label: 'CGPA (SDMCET)', value: '9.15', detail: 'Information Science & Engineering' },
     { label: 'Featured Projects', value: '3', detail: 'Full-stack & Mobile systems' },
     { label: 'Internship', value: 'Exposys Data Labs', detail: 'Software Development Intern' },
     { label: 'Status', value: 'Graduating 2026', detail: 'Seeking entry-level SDE role' },
@@ -36,8 +37,8 @@ export const PROFILE = {
     {
       institution: 'SDM College of Engineering & Technology (SDMCET)',
       degree: 'B.E. in Information Science and Engineering',
-      duration: 'Graduating 2026',
-      grade: 'CGPA 9.07',
+      duration: 'Graduated 2026',
+      grade: 'CGPA 9.15',
       location: 'Dharwad, Karnataka, India',
       coursework: [
         'Operating Systems',
@@ -50,7 +51,7 @@ export const PROFILE = {
     },
     {
       institution: 'Pre-University Course (PUC)',
-      degree: 'Science (PCMB / PCMC)',
+      degree: 'Science (PCMB)',
       duration: '2022',
       grade: '93.17%',
       location: 'Karnataka, India',
