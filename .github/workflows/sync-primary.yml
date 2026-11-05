@@ -1,0 +1,22 @@
+
+name: Sync Secondary to Primary
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout secondary repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push changes to primary repository
+        run: |
+          git remote add primary https://x-access-token:${{ secrets.PRIMARY_REPO_TOKEN }}@github.com/DarshanGitHub123/portfolio-darshan.git
+          git push primary HEAD:main
