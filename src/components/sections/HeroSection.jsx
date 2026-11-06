@@ -45,7 +45,7 @@ export function HeroSection() {
             {/* Status Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-muted/40 border border-border-subtle text-accent text-xs font-mono">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Available for 2026 Entry-Level Roles</span>
+              <span>Available for Software Developer Roles</span>
             </div>
 
             {/* H1 Heading */}
@@ -68,7 +68,7 @@ export function HeroSection() {
 
             {/* Real Plain-Text Bio for Search Crawlers and Immediate Readability */}
             <p className="text-base sm:text-lg text-text-muted leading-relaxed font-sans max-w-xl mx-auto lg:mx-0">
-              {PROFILE.objective} Final-year Information Science student at SDMCET (CGPA 9.15)
+              {PROFILE.objective} Information Science graduate from SDMCET (CGPA 9.15)
               building reliable web services with React & Node.js, and native mobile apps with Android.
             </p>
 

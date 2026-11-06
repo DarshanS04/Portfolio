@@ -5,7 +5,7 @@
 
 export const PROFILE = {
   name: 'Darshan Saravari',
-  title: 'Full-Stack & Android Developer',
+  title: 'Full-Stack & Android Developer (B.E. Graduate)',
   roleTaglines: [
     'Full-Stack Developer',
     'Android Developer',
@@ -19,19 +19,19 @@ export const PROFILE = {
   // TODO: Replace with your actual LinkedIn profile URL
   linkedin: 'https://in.linkedin.com/in/darshan-saravari',
   location: 'Karnataka, India',
-  status: 'Open to Entry-Level Software Developer Roles (Graduate 2026)',
+  status: 'Open to Software Developer Roles (B.E. Graduate)',
   objective:
-    'Final-year Information Science student with hands-on experience in full-stack development using React, Node.js, and MongoDB. Seeking an entry-level software developer role.',
+    'Information Science and Engineering graduate with hands-on experience in full-stack development using React, Node.js, and MongoDB. Seeking a software developer role.',
   bioParagraphs: [
-    'I am a final-year Information Science and Engineering student at SDM College of Engineering & Technology (SDMCET), graduating in 2026 with a CGPA of 9.15.',
+    'I am an Information Science and Engineering graduate from SDM College of Engineering & Technology (SDMCET) with a CGPA of 9.15.',
     'With hands-on experience spanning modern web stacks (React, Node.js, Express, MongoDB) and native Android development (Java, Firebase), I enjoy engineering scalable, secure systems and real-time distributed applications. I have completed a software development internship at Exposys Data Labs focusing on cryptographic file transfer and authentication.',
-    'I am actively seeking an entry-level software developer role where I can contribute solid algorithmic foundations, clean architecture practices, and full-stack engineering skills.',
+    'I am actively seeking a software developer role where I can contribute solid algorithmic foundations, clean architecture practices, and full-stack engineering skills.',
   ],
   stats: [
     { label: 'CGPA (SDMCET)', value: '9.15', detail: 'Information Science & Engineering' },
     { label: 'Featured Projects', value: '3', detail: 'Full-stack & Mobile systems' },
     { label: 'Internship', value: 'Exposys Data Labs', detail: 'Software Development Intern' },
-    { label: 'Status', value: 'Graduating 2026', detail: 'Seeking entry-level SDE role' },
+    { label: 'Status', value: 'B.E. Graduate', detail: 'Seeking software developer role' },
   ],
   education: [
     {

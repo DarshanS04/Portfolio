@@ -73,10 +73,10 @@ export function AboutSection() {
             <div className="glass-panel p-5 rounded-xl border border-border-subtle">
               <div className="flex items-center justify-between text-accent mb-2">
                 <BookOpen className="w-6 h-6" />
-                <span className="font-mono text-xs text-text-muted">TARGET</span>
+                <span className="font-mono text-xs text-text-muted">STATUS</span>
               </div>
-              <div className="text-xl font-extrabold font-mono text-text-primary">2026 Batch</div>
-              <div className="text-sm font-semibold text-text-secondary mt-1">Entry-Level SDE</div>
+              <div className="text-xl font-extrabold font-mono text-text-primary">B.E. Graduate</div>
+              <div className="text-sm font-semibold text-text-secondary mt-1">Software Developer</div>
               <p className="text-xs text-text-muted mt-1">Ready for full-time opportunities</p>
             </div>
           </div>

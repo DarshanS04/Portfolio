@@ -32,7 +32,7 @@ const AUTO_SCRIPT = [
   },
   {
     cmd: 'git log --oneline -1',
-    output: 'c7f91a2 (HEAD -> main) open to entry-level software developer roles (graduating 2026)',
+    output: 'c7f91a2 (HEAD -> main) open to software developer roles (B.E. graduate)',
     delay: 1400,
   },
 ];

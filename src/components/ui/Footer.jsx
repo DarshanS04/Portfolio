@@ -24,8 +24,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-text-muted leading-relaxed font-sans max-w-sm">
-              {PROFILE.title}. Final-year Information Science student at SDMCET graduating in 2026.
-              Open to entry-level software engineering opportunities.
+              {PROFILE.title}. Information Science graduate from SDMCET.
+              Open to software engineering opportunities.
             </p>
             <div className="mt-4 flex items-center gap-2 text-xs font-mono text-accent">
               <ShieldCheck className="w-4 h-4" />

@@ -7,7 +7,7 @@
 [![Vitest](https://img.shields.io/badge/Tests-28%20Passed-brightgreen.svg)](https://vitest.dev/)
 [![A11y](https://img.shields.io/badge/A11y-WCAG%202.1%20AA-success.svg)](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
-> Production-grade, highly polished developer portfolio and terminal experience engineered for **Darshan Saravari** — Full-Stack & Android Developer (Final-Year B.E. Information Science Student at SDMCET, CGPA 9.15, Graduated 2026).
+> Production-grade, highly polished developer portfolio and terminal experience engineered for **Darshan Saravari** — Full-Stack & Android Developer (B.E. Information Science Graduate from SDMCET, CGPA 9.15, Graduated 2026).
 
 ---
 

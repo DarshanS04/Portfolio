@@ -17,7 +17,7 @@ export function HomePage() {
         <title>Darshan Saravari | Full-Stack & Android Developer</title>
         <meta
           name="description"
-          content="Darshan Saravari is a Full-Stack and Android Developer and final-year Information Science student at SDMCET with expertise in React, Node.js, and Java."
+          content="Darshan Saravari is a Full-Stack and Android Developer and Information Science graduate from SDMCET with expertise in React, Node.js, and Java."
         />
         <link rel="canonical" href={PROFILE.siteUrl} />
       </Helmet>
