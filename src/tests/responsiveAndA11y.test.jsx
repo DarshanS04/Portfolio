@@ -60,21 +60,16 @@ describe('Accessibility & Responsive UI Verification', () => {
     expect(toggleBtn).toHaveAttribute('aria-expanded', 'false');
   });
 
-  it('ensures contact form has full a11y labels and hidden honeypot', () => {
+  it('ensures contact section displays direct communication channels and accessible links', () => {
     render(
       <ThemeProvider>
         <ContactSection />
       </ThemeProvider>
     );
 
-    // Form inputs have linked accessible labels
-    expect(screen.getByLabelText(/name:/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/email:/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/payload_message:/i)).toBeInTheDocument();
-
-    // Honeypot field exists and is marked aria-hidden
-    const honeypotInput = screen.getByLabelText(/Leave this field empty/i);
-    expect(honeypotInput).toBeInTheDocument();
-    expect(honeypotInput).toHaveAttribute('tabIndex', '-1');
+    expect(screen.getByLabelText(/Email Address:/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/GitHub:/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/LinkedIn:/i)).toBeInTheDocument();
+    expect(screen.getByText(/Karnataka, India/i)).toBeInTheDocument();
   });
 });
