@@ -33,7 +33,7 @@ jobs:
       - name: Build Application & Static Prerender All Routes
         run: npm run build
         env:
-          VITE_SITE_URL: https://darshan-portfolio.vercel.app
+          VITE_SITE_URL: https://darshansaravari.vercel.app
 
       - name: Verify Prerendered HTML & SEO Metadata
         run: npm run check-prerender

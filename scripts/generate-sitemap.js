@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.resolve(rootDir, 'dist');
 
-const siteUrl = (process.env.VITE_SITE_URL || PROFILE.siteUrl || 'https://darshan-portfolio.vercel.app').replace(/\/$/, '');
+const siteUrl = (process.env.VITE_SITE_URL || PROFILE.siteUrl || 'https://darshansaravari.vercel.app').replace(/\/$/, '');
 
 function generateSitemap() {
   console.log('🗺️ Generating sitemap.xml & robots.txt...');

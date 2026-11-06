@@ -66,6 +66,6 @@ export const PROFILE = {
   ],
   // TODO: Place your PDF resume in public/resume.pdf
   resumeUrl: '/resume.pdf',
-  siteUrl: 'https://darshan-portfolio.vercel.app',
+  siteUrl: 'https://darshansaravari.vercel.app',
 };
 

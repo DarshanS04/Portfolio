@@ -4,16 +4,15 @@ This guide outlines the critical manual actions required after deploying **Darsh
 
 ---
 
-## 1. Domain Configuration (Vercel)
-1. In your **Vercel Dashboard**, go to **Settings > Domains**.
-2. Add your custom domain (e.g., `darshansaravari.dev` or `darshan.sh`).
-3. Configure the DNS records provided by Vercel:
-   - **A Record**: `@` pointing to `76.76.21.21`
-   - **CNAME**: `www` pointing to `cname.vercel-dns.com`
-4. Update `VITE_SITE_URL` in your Vercel Environment Variables to your custom domain:
-   ```env
-   VITE_SITE_URL=https://your-custom-domain.com
-   ```
+## 1. Live Domain Status
+Your portfolio is live at:
+- **Production URL**: `https://darshansaravari.vercel.app`
+- **Sitemap**: `https://darshansaravari.vercel.app/sitemap.xml`
+- **Robots**: `https://darshansaravari.vercel.app/robots.txt`
+
+If you later connect a custom domain (e.g. `darshansaravari.dev`):
+1. In your **Vercel Dashboard**, go to **Settings > Domains** and add it.
+2. Update `VITE_SITE_URL` in your Vercel Environment Variables.
 
 ---
 
@@ -28,7 +27,7 @@ This guide outlines the critical manual actions required after deploying **Darsh
    - Enter `sitemap.xml` in the "Add a new sitemap" input.
    - Click **Submit**. Google will crawl all 4 prerendered routes (`/`, `/projects/electronic-gadget-ecommerce`, `/projects/bake-track`, `/projects/minor-it-sphere`).
 6. Request Priority Indexing:
-   - Use the URL Inspection tool at the top of GSC for `https://your-domain.com`.
+   - Use the URL Inspection tool at the top of GSC for `https://darshansaravari.vercel.app`.
    - Click **Request Indexing**.
 
 ---
@@ -44,10 +43,11 @@ This guide outlines the critical manual actions required after deploying **Darsh
 Google uses identity backlinks to connect your name to this website:
 1. **GitHub Profile (`github.com/DarshanS04`)**:
    - Edit your public profile.
-   - In the **Website** field, add your portfolio URL: `https://your-domain.com`.
-   - In your profile bio or `README.md`, include: `Check out my portfolio: https://your-domain.com`.
+   - In the **Website** field, add your portfolio URL: `https://darshansaravari.vercel.app`.
+   - In your profile bio or `README.md`, include: `Check out my portfolio: https://darshansaravari.vercel.app`.
 2. **LinkedIn Profile**:
    - Add your website link in your contact info: **Edit Contact Info > Add Website**.
+   - URL: `https://darshansaravari.vercel.app`
    - Select type: **Personal**.
    - Add a featured link on your LinkedIn profile pointing to the portfolio.
 3. **Resume (PDF)**:
