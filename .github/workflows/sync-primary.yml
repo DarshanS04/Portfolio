@@ -1,22 +1,33 @@
-
 name: Sync Secondary to Primary
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch: # Allows manual one-click trigger from GitHub Actions tab to test sync
 
 jobs:
   sync:
+    name: Mirror Repository to Primary Profile
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout secondary repository
+      - name: Checkout source repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Push changes to primary repository
+      - name: Validate Secret Configuration
+        env:
+          TOKEN: ${{ secrets.PRIMARY_REPO_TOKEN }}
         run: |
-          git remote add primary https://x-access-token:${{ secrets.PRIMARY_REPO_TOKEN }}@github.com/DarshanGitHub123/portfolio-darshan.git
-          git push primary HEAD:main
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Secret PRIMARY_REPO_TOKEN is missing or empty! Please add it in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
+      - name: Push mirror to primary repository
+        env:
+          TOKEN: ${{ secrets.PRIMARY_REPO_TOKEN }}
+        run: |
+          git push --force "https://x-access-token:${TOKEN}@github.com/DarshanGitHub123/portfolio-darshan.git" HEAD:main
