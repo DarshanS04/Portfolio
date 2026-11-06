@@ -1,10 +1,12 @@
+
 name: Sync Secondary to Primary
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch: # Allows manual one-click trigger from GitHub Actions tab to test sync
+
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -12,22 +14,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout source repository
       - name: Checkout source repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # Step 2: Validate GitHub secret
       - name: Validate Secret Configuration
         env:
           TOKEN: ${{ secrets.PRIMARY_REPO_TOKEN }}
         run: |
           if [ -z "$TOKEN" ]; then
-            echo "::error::Secret PRIMARY_REPO_TOKEN is missing or empty! Please add it in Settings > Secrets and variables > Actions."
+            echo "::error::PRIMARY_REPO_TOKEN is missing!"
             exit 1
           fi
 
+          echo "GitHub token detected successfully."
+
+      # Step 3: Push code to primary repository
       - name: Push mirror to primary repository
         env:
           TOKEN: ${{ secrets.PRIMARY_REPO_TOKEN }}
         run: |
-          git push --force "https://x-access-token:${TOKEN}@github.com/DarshanGitHub123/portfolio-darshan.git" HEAD:main
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$TOKEN" | base64 -w 0)" \
+            push --force \
+            https://github.com/DarshanGitHub123/portfolio-darshan.git \
+            HEAD:main
